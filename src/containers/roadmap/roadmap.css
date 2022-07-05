@@ -1,0 +1,21 @@
+.roadmap-section {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.roadmap-container {
+    width: 80%;
+}
+
+
+.roadmap-container div {
+    line-height: 45px;
+    font-size: 25px;
+    color: #fff;
+  
+}

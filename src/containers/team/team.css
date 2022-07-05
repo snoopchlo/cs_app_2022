@@ -1,0 +1,101 @@
+
+.team-section {
+    width: 100%;
+    min-height: 100vh;
+    
+    color:aliceblue;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-section .team-member-container {
+    width: 70%;
+}
+
+.team-section .team-member-container .member {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    background-color: rgba(67, 67, 67, 0.172);
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.team-section .team-member-container .member .member-img {
+    height: 300px;
+    width: 300px;
+    border-radius: 40px;
+}
+
+.team-section .team-member-container .member-1 .member-img {
+    background-image: url("../../assets/characters-img/ROZI-3D.png");
+    background-size: cover;
+    background-position: center;
+    border: 2px solid var(--color-sec-light);
+}
+
+.team-section .team-member-container .member-2 .member-img {
+    background-image: url("../../assets/characters-img/COCO-3D.png");
+    background-size: cover;
+    background-position: center;
+    border: 2px solid var(--color-sec-light);
+}
+
+.team-section .team-member-container .member-3 .member-img {
+    background-image: url("../../assets/characters-img/POPO-3D.png");
+    background-size: cover;
+    background-position: center;
+    border: 2px solid var(--color-sec-light);
+}
+
+.team-section .team-member-container .member .member-info {
+    margin-left: 50px;
+    max-width: 50%;
+}
+
+.team-section .team-member-container .member .member-info .name {
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.team-section .team-member-container .member .member-info .position {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+} 
+
+
+.team-section .team-member-container .member .member-info .about {
+    
+    margin: 40px 0 50px 0;
+    font-weight: 100;
+    font-size: 17px;
+}
+
+
+/* .team-member-container .member .member-info .contact-member {
+    background: var(--color-sec-light);
+    padding: 17px 35px;
+    font-size: 18px;
+    
+    border-radius: 50px;
+
+    transition: .1s ease;
+} */
+
+/* .team-member-container .member .member-info .contact-member span {
+    text-transform: capitalize;
+}
+
+.team-member-container .member .member-info .contact-member:hover {
+    background: transparent;
+    border: 2px solid var(--color-sec-light);
+} */

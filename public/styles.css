@@ -1,0 +1,50 @@
+body:hover.cursor-image{
+  
+    animation: heartbeat 2s infinite;  
+  }
+
+
+
+.cursor-image {
+    position: absolute;
+    top: 0;
+    left: -350px;
+    height: 300px!important;
+    width: 300px!important;
+
+    text-align: center;
+    animation: heartbeat infinite ease-in-out;
+    scroll-behavior: smooth;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    z-index: 50!important;
+
+    background-image: url("./cursor-image-spaceship.png");
+    background-size: cover;
+    background-position: center;
+
+}   
+
+@keyframes floatingUp {
+    0% { transform: none; }
+    50%  { transform: translate(0, 10px); }
+    100% { transform: none; }  
+}
+
+@keyframes heartbeat {
+    0% { 
+      transform: translate(-50%, -50%) scale(1); 
+    }
+    50% { 
+      transform: translate(-50%, -50%) scale(1.5); 
+    }
+    100% { 
+      transform: translate(-50%, -50%) scale(1); 
+    }
+  
+  }
+  
+

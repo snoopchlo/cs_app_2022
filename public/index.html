@@ -1,43 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
+    
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
     <meta
-      name="description"
+      name="Cyber Siblings Website"
       content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <!-- <link rel="stylesheet" href="./styles.css"> -->
+    <title>Cyber Siblings</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!-- <div class="cursor-image"></div> -->
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  
+    <script src="https://kit.fontawesome.com/c6a2c320fa.js" crossorigin="anonymous"></script>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <!-- <script>
+      //https://www.superhi.com/video/smooth-movements-with-javascript
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+
+
+        const e = document.getElementsByClassName("cursor-image");
+        const follow = e[0];
+        //getElementClassName selector -> add [0]
+
+
+
+        let mouseX = 0;
+        let mouseY = 0;
+
+        let followX = 0;
+        let followY = 0;
+
+        // let speed = 0.02;
+        let speed = 0.02;
+
+        function animate(){
+          
+          let distX = mouseX - followX;
+          let distY = mouseY - followY;
+          
+          
+          followX = followX + (distX * speed);
+          followY = followY + (distY * speed);
+          
+          follow.style.left = followX + "px";
+          follow.style.top = followY + "px";
+          
+          requestAnimationFrame(animate);
+        }
+        animate();
+
+        document.addEventListener("mousemove", function(event){
+          // define where the mouse is
+          mouseX = event.pageX;
+          mouseY = event.pageY;
+        })
+
+
+
+    </script> -->
+
   </body>
 </html>

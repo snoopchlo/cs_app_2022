@@ -1,0 +1,312 @@
+.destination-section {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    /* margin-top: 500px; */
+    margin-top: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15rem;
+
+
+}
+
+/* .destination-section .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+} */
+
+.destination-title {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    color: #fff;
+}
+
+.destination-location {
+
+    font-size: 3rem;
+    color: #fff;
+}
+
+
+
+.destination-section .planet-container {
+    position: inherit;
+    /* margin-top: -50px; */
+    margin-top: 3.125rem;
+    /* height: 520px;
+    width: 520px; */
+    height: 32.5rem;
+    width: 32.5rem;
+    /* width: 50%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    user-select: none;
+}
+
+
+.destination-section .planet-container .main-img {
+    position: absolute;
+    /* height: 300px;
+    width: 300px; */
+    height: 18.75rem;
+    width: 18.75rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.destination-section .planet-container .main-img.active {
+    animation: spin 8s linear 1s infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+    
+}
+
+.destination-section .planet-container .main-img .circle {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgb(4, 4, 44);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease;
+    opacity: 0;
+    mix-blend-mode: screen;
+
+}
+
+.destination-section .planet-container .main-img.active .circle {
+    opacity: 1;
+    mix-blend-mode: screen;
+}
+
+.destination-section .planet-container .main-img.active .circle:nth-child(1) {
+
+    background-image: url("../../assets/planets-img/planet1.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translateY(-220%);
+}
+
+.destination-section .planet-container .main-img.active .circle:nth-child(2) {
+    background-image: url("../../assets/planets-img/planet2.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translate(160% ,-160%);
+}
+
+.destination-section .planet-container .main-img.active .circle:nth-child(3) {
+    background-image: url("../../assets/planets-img/planet3.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translate(220%);
+}
+
+.destination-section .planet-container .main-img.active .circle:nth-child(4) {
+    background-image: url("../../assets/planets-img/planet4.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translate(160% ,160%);
+}
+
+.destination-section .planet-container .main-img.active .circle:nth-child(5) {
+    background-image: url("../../assets/planets-img/planet5.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translateY(220%);
+}
+
+.destination-section .planet-container .main-img.active .circle:nth-child(6) {
+    background-image: url("../../assets/planets-img/planet6.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translate(-160%, 160%);
+}
+
+.destination-section .planet-container .main-img.active .circle:nth-child(7) {
+    background-image: url("../../assets/planets-img/planet7.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translateX(-220%);
+}
+
+.destination-section .planet-container .main-img.active .circle:nth-child(8) {
+    background-image: url("../../assets/planets-img/planet8.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translate(-160%, -160%);
+}
+
+.planet-container img {
+    position: absolute;
+    height: 18.75rem;
+    width: 18.75rem;
+    border-radius: 50%;
+    border: 3px solid rgb(108, 161, 197);
+    transform: translate(-200px);
+    opacity: 0;
+    animation: fade-in 1s ease 1 0.5s forwards;
+}
+
+@keyframes fade-in {
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
+    
+}
+
+.scroll-down {
+    transform: rotate(90deg);
+    position: absolute;
+    /* right: 0; */
+    right: -3%;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.scroll-down___text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 100;
+}
+.scroll-down hr {
+    background-color: blue;
+    width: 20px;
+}
+
+
+.scroll-down .scroll {
+    transform: rotate(-90deg);
+    font-size: 100px;
+
+}
+
+@media screen and (max-width: 1050px) {
+    .destination-section {
+        margin-top: 3em;
+    }
+    
+    .scroll-down {
+        display: none;
+    }
+    
+    .destination-title {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        color: #fff;
+    }
+    
+    .destination-location {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+   
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    .destination-section {
+        top: -15rem;
+    }
+
+    .destination-section .planet-container {
+        margin-top: 0;
+
+        height:30rem;
+        width: 30rem;
+
+    }
+    .planet-container img {
+        height: 14rem;
+        width: 14rem;
+    }
+    .destination-section .planet-container .main-img .circle {
+        height: 5rem;
+        width: 5rem;
+    }
+    .scroll-down {
+        display: none;
+    }
+    
+    .destination-title {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        color: #fff;
+    }
+    
+    .destination-location {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+   
+    }
+
+}
+@media screen and (max-width: 490px) {
+    .destination-section {
+        top: -30rem;
+    }
+     .destination-section .planet-container {
+        margin-top: 0;
+
+        height:20rem;
+        width: 20rem;
+
+    }
+     .planet-container img {
+         height: 12rem;
+         width: 12rem;
+     }
+     .destination-section .planet-container .main-img .circle {
+         height: 3.5rem;
+         width: 3.5rem;
+     }
+
+     .destination-title {
+         font-size: 2rem;
+   
+         color: #fff;
+     }
+     
+     .destination-location {
+   
+         font-size: 1.5rem;
+    
+     }
+}
+
+
