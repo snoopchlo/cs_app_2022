@@ -1,18 +1,28 @@
 .NFT-section {
     width: 100%;
-    height: 100vh;
+    height: 300vh;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 
     position: relative;
 }
 
+.NFT-section .girls-collection-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 200vh;
+}
 
 .NFT .nft-title {
     font-size: 3rem;
+
 }
 
 
@@ -29,3 +39,20 @@
     
 }
 
+.NFT-section .NFT-title-line {
+    background-image: url("../../assets/header-img/flower-line.png");
+    background-position: center;
+    background-size: cover;
+
+    width: 85%;
+    height: 80px;
+    top: 0;
+    margin-bottom: 4rem;
+
+    filter: brightness(10);
+}
+
+/* overrides the section__title's initial margin setting */
+.NFT-title-line + .section__title {
+    margin: 0!important;
+}
