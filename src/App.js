@@ -7,7 +7,7 @@ import "./App.css";
 // import { CTA, Navbar, SideNavbar, Loader } from "./components/index.js";
 
 import { Home, About, NFT } from "../src/containers/index.js";
-import { Loader, Navbar, SideNavbar } from "../src/components/index.js";
+import { Navbar, SideNavbar, Spaceship } from "../src/components/index.js";
 
 class App extends React.Component {
 
@@ -25,7 +25,7 @@ class App extends React.Component {
   render() {
     const { isLoading } = this.state;
     
-    return <div>{isLoading ? <Loader /> 
+    return <div>{isLoading ? <Spaceship /> 
     :  <>
     <div className="bg-circle1"></div>
     <div className="bg-circle2"></div>

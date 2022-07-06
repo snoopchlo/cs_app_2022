@@ -1,20 +1,20 @@
 import React from 'react';
 
-import { AnimationOnScroll } from 'react-animation-on-scroll';
-import "./loader.css";
+import 'animate.css';
+import "./spaceship.css";
 import spaceship from "../../assets/header-img/spaceship.png";
 
-const Loader = () => {
+const Spaceship = () => {
   return (
 
     
-    <section className="loader-section section__padding" id="loader-screen">
-        <div className='loader-text-container'>
-          <AnimationOnScroll animateIn="animate__fadeIn" animateOut='animate__fadeOut'>
-            <span className='loader-text-container__text'>Travelling to the </span><span className='loader-text-container__text gradient__text'>Planet KPOP101</span>
-          </AnimationOnScroll>
-
-        <div className="loader-container">
+    <section className="spaceship-section section__padding animate__animated animate__fadeIn" id="spaceship-screen">
+      <div className='spaceship-container'>
+        <div className='spaceship-container__text'>
+          <span className='spaceship-container__text--first'>Travelling to the</span>
+          <span className='spaceship-container__text--second gradient__text'>Planet KPOP101</span>
+        </div>
+        <div className="spaceship-container__image">
             <div className="main-img active">   
                 <span className="circle"></span>
                 <span className="circle "></span>
@@ -26,8 +26,10 @@ const Loader = () => {
                 <span className="circle"></span>
             </div>
         <img src={spaceship} alt=""/>
-        </div>
+          </div>
       </div>
+
+    
     </section>
 
 
@@ -35,4 +37,4 @@ const Loader = () => {
   )
 }
 
-export default Loader;
+export default Spaceship;

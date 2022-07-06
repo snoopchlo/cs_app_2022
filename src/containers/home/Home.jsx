@@ -2,9 +2,9 @@ import React from 'react';
 import { Parallax } from 'react-scroll-parallax';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import "./home.css";
-import Loader from "../../components/loader/Loader.jsx"
+import Spaceship from "../../components/spaceship/Spaceship.jsx"
 import stars from "../../assets/images/hero/stars.svg";
-import rocket from "../../assets/rocket.png"
+
 // import planet from "../../assets/images/hero/main-planet.svg";
 // import bgLeft from "../../assets/images/hero/mainback-left.svg";
 // import bgRight from "../../assets/images/hero/mainback-right.svg";
@@ -25,7 +25,7 @@ const Home = () => {
         </section>
   
         <div className='hero-element'>
-          <Loader />
+          <Spaceship />
         </div>
        
           {/* <div className='rocket-img'>
