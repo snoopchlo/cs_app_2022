@@ -1,44 +1,31 @@
-.spaceship-section {
-    position: absolute;
+.spaceship-container {
     width: 100%;
-    height: 100vh;
-    z-index: 9999;
-    top: 0;
-    /* background: rgb(2, 2, 26)!important; */
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.spaceship-section .spaceship-container {
-    width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 .spaceship-container__text {
-    flex-wrap: wrap;
-    line-height: 7rem;
     display: flex;
-    font-size: 2.1rem;
-    color: #fff;
-    letter-spacing: 0.5rem;
-    font-weight: 700;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 
+    color: #fff;
+    line-height: 5rem;
+    font-size: 2.1rem;
+    letter-spacing: 0.5rem;
+    font-weight: 700;
 }   
+
 .spaceship-container__text span {
     margin: 0 5px;
     text-align: center;
 }
 
-.spaceship-section .spaceship-container__image {
+.spaceship-container__image {
     position: inherit;
 
     margin-top: 3.125rem;
@@ -54,7 +41,7 @@
 }
 
 
-.spaceship-section .spaceship-container__image .main-img {
+.spaceship-container__image .main-img {
     position: absolute;
     /* height: 300px;
     width: 300px; */
@@ -68,7 +55,7 @@
     cursor: pointer;
 }
 
-.spaceship-section .spaceship-container__image .main-img.active {
+.spaceship-container__image .main-img.active {
     animation: spin 8s linear 1s infinite;
 }
 
@@ -79,7 +66,7 @@
     
 }
 
-.spaceship-section .spaceship-container__image .main-img .circle {
+.spaceship-container__image .main-img .circle {
     position: absolute;
     height: 5rem;
     width: 5rem;
@@ -94,12 +81,12 @@
 
 }
 
-.spaceship-section .spaceship-container__image .main-img.active .circle {
+.spaceship-container__image .main-img.active .circle {
     opacity: 1;
     mix-blend-mode: screen;
 }
 
-.spaceship-section .spaceship-container__image .main-img.active .circle:nth-child(1) {
+.spaceship-container__image .main-img.active .circle:nth-child(1) {
 
     background-image: url("../../assets/planets-img/planet1.png");
     background-size: cover;
@@ -108,7 +95,7 @@
     transform: translateY(-220%);
 }
 
-.spaceship-section .spaceship-container__image .main-img.active .circle:nth-child(2) {
+.spaceship-container__image .main-img.active .circle:nth-child(2) {
     background-image: url("../../assets/planets-img/planet2.png");
     background-size: cover;
     background-position: center;
@@ -116,7 +103,7 @@
     transform: translate(160% ,-160%);
 }
 
-.spaceship-section .spaceship-container__image .main-img.active .circle:nth-child(3) {
+.spaceship-container__image .main-img.active .circle:nth-child(3) {
     background-image: url("../../assets/planets-img/planet3.png");
     background-size: cover;
     background-position: center;
@@ -124,7 +111,7 @@
     transform: translate(220%);
 }
 
-.spaceship-section .spaceship-container__image .main-img.active .circle:nth-child(4) {
+.spaceship-container__image .main-img.active .circle:nth-child(4) {
     background-image: url("../../assets/planets-img/planet4.png");
     background-size: cover;
     background-position: center;
@@ -132,7 +119,7 @@
     transform: translate(160% ,160%);
 }
 
-.spaceship-section .spaceship-container__image .main-img.active .circle:nth-child(5) {
+.spaceship-container__image .main-img.active .circle:nth-child(5) {
     background-image: url("../../assets/planets-img/planet5.png");
     background-size: cover;
     background-position: center;
@@ -140,7 +127,7 @@
     transform: translateY(220%);
 }
 
-.spaceship-section .spaceship-container__image .main-img.active .circle:nth-child(6) {
+.spaceship-container__image .main-img.active .circle:nth-child(6) {
     background-image: url("../../assets/planets-img/planet6.png");
     background-size: cover;
     background-position: center;
@@ -148,7 +135,7 @@
     transform: translate(-160%, 160%);
 }
 
-.spaceship-section .spaceship-container__image .main-img.active .circle:nth-child(7) {
+.spaceship-container__image .main-img.active .circle:nth-child(7) {
     background-image: url("../../assets/planets-img/planet7.png");
     background-size: cover;
     background-position: center;
@@ -156,7 +143,7 @@
     transform: translateX(-220%);
 }
 
-.spaceship-section .spaceship-container__image .main-img.active .circle:nth-child(8) {
+.spaceship-container__image .main-img.active .circle:nth-child(8) {
     background-image: url("../../assets/planets-img/planet8.png");
     background-size: cover;
     background-position: center;
@@ -208,7 +195,7 @@
         height: 0.3rem;
         margin-inline: 1.5rem;
     }
-    .spaceship-section .spaceship-container__image {
+    .spaceship-container__image {
         height: 20rem;
         width: 20rem;
     }
@@ -216,7 +203,7 @@
         height: 10rem;
         width: 10rem;
     }
-    .spaceship-section .spaceship-container__image .main-img .circle {
+    .spaceship-container__image .main-img .circle {
         height: 3rem;
         width: 3rem;
     }
@@ -245,7 +232,7 @@
         margin-inline: 1.5rem;
   
     }
-    .spaceship-section .spaceship-container {
+    .spaceship-container {
         height: 15rem;
         width: 15rem;
 
@@ -255,7 +242,7 @@
         width: 9rem;
  
     }
-    .spaceship-section .spaceship-container__image .main-img .circle {
+    .spaceship-container__image .main-img .circle {
         height: 3rem;
         width: 3rem;
 

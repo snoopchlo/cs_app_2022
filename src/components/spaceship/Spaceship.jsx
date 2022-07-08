@@ -8,7 +8,7 @@ const Spaceship = () => {
   return (
 
     
-    <section className="spaceship-section section__padding animate__animated animate__fadeIn" id="spaceship-screen">
+    // <section className="spaceship-section section__padding animate__animated animate__fadeIn" id="spaceship-screen">
       <div className='spaceship-container'>
         <div className='spaceship-container__text'>
           <span className='spaceship-container__text--first'>Travelling to the</span>
@@ -30,7 +30,7 @@ const Spaceship = () => {
       </div>
 
     
-    </section>
+    // </section>
 
 
 
