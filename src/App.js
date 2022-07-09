@@ -6,7 +6,7 @@ import "./App.css";
 // import { Footer, Roadmap, Features, About, Header, Team, NFT, NFT2, NFT3, Contact, FAQ } from "../src/containers/index.js";
 // import { CTA, Navbar, SideNavbar, Loader } from "./components/index.js";
 
-import { Home, About, NFT ,NFT2, NFT3, Team,  Roadmap,Contact, FAQ, Footer} from "../src/containers/index.js";
+import { Home, About, NFT ,NFT2, NFT3, Team,  Roadmap,Contact, FAQ, Footer, Features, Welcome} from "../src/containers/index.js";
 import { Navbar, SideNavbar, Spaceship, CTA } from "../src/components/index.js";
 
 class App extends React.Component {
@@ -34,7 +34,9 @@ class App extends React.Component {
             <Home />
             <SideNavbar />
             <About />
+            <Welcome />
             <NFT />
+            <Features />
             <NFT2 />
             <NFT3 />
             <Roadmap />

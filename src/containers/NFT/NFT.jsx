@@ -8,7 +8,7 @@ import img3 from "../../assets/NFT-images/1680.png";
 import img4 from "../../assets/NFT-images/1690.png";
 import img5 from "../../assets/NFT-images/1697.png";
 // import img6 from "../../assets/NFT-images/1702.png";
-
+import flowerLine from "../../assets/header-img/flower-line.png";
 
 const NFT = () => {
   return (
@@ -16,7 +16,9 @@ const NFT = () => {
     <Parallax speed={-25}>
     <section className="NFT-section section__padding">
         <div className="girls-collection-container">
-            <div className="NFT-title-line"></div>
+            <div className="NFT-title-line">
+                <img src={flowerLine} alt="." />
+            </div>
             <h1 className="section__title">KPOP101</h1>
 
             <h1 className="section__subtitle gradient__text">gulz collection</h1>
