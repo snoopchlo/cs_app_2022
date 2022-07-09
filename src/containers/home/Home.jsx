@@ -24,30 +24,30 @@ const Home = () => {
         </div>      
         <section className='home-container'>
           <div className='home-container-top'></div>
-              <div className='home-container-left'></div>
-              <div className='home-container-right'></div>
-              <div className='home-container-bottom'></div>
-              <AnimationOnScroll animateIn="animate__fadeIn" animateOut='animate__fadeOut'>  
-                <span className='hero-image first-left'></span>
-              </AnimationOnScroll>
-              <AnimationOnScroll animateIn="animate__fadeIn" animateOut='animate__fadeOut'>  
-                <span className='first-right hero-text'>Some Text?</span>
-              </AnimationOnScroll>
+          <div className='home-container-left'></div>
+          <div className='home-container-right'></div>
+          <div className='home-container-bottom'></div>
+          <AnimationOnScroll animateIn="animate__fadeIn" animateOut='animate__fadeOut'>  
+            <span className='hero-image first-left'></span>
+          </AnimationOnScroll>
+          <AnimationOnScroll animateIn="animate__fadeIn" animateOut='animate__fadeOut'>  
+            <span className='first-right hero-text'>Some Text?</span>
+          </AnimationOnScroll>
+          <AnimationOnScroll animateIn="animate__fadeIn" animateOut='animate__fadeOut'>  
+            <span className='hero-image second-right'></span>
+          </AnimationOnScroll>
+          <AnimationOnScroll animateIn="animate__fadeIn" animateOut='animate__fadeOut'>  
+            <span className='hero-text second-left'>Some Text!</span>
+          </AnimationOnScroll>
+      
 
-              <AnimationOnScroll animateIn="animate__fadeIn" animateOut='animate__fadeOut'>  
-                <span className='hero-text second-left'>Some Text!</span>
-              </AnimationOnScroll>
-          
-              <AnimationOnScroll animateIn="animate__fadeIn" animateOut='animate__fadeOut'>  
-                <span className='hero-image second-right'></span>
-              </AnimationOnScroll>
 
-              <AnimationOnScroll animateIn="animate__fadeIn" animateOut='animate__fadeOut'>  
-                <span className='hero-image third-left'></span>
-              </AnimationOnScroll>
-              <AnimationOnScroll animateIn="animate__fadeIn" animateOut='animate__fadeOut'>  
-                <span className='third-right hero-text'>Some Text?</span>
-              </AnimationOnScroll>
+          <AnimationOnScroll animateIn="animate__fadeIn" animateOut='animate__fadeOut'>  
+            <span className='hero-image third-left'></span>
+          </AnimationOnScroll>
+          <AnimationOnScroll animateIn="animate__fadeIn" animateOut='animate__fadeOut'>  
+            <span className='third-right hero-text'>Some Text?</span>
+          </AnimationOnScroll>
         </section>
         
         
