@@ -3,6 +3,7 @@
     height: 100vh;
     position: relative;
     z-index: 1;
+    margin-bottom: 3rem;
 }
 
 .home-section .hero-container {

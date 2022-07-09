@@ -6,8 +6,8 @@ import "./App.css";
 // import { Footer, Roadmap, Features, About, Header, Team, NFT, NFT2, NFT3, Contact, FAQ } from "../src/containers/index.js";
 // import { CTA, Navbar, SideNavbar, Loader } from "./components/index.js";
 
-import { Home, About, NFT } from "../src/containers/index.js";
-import { Navbar, SideNavbar, Spaceship } from "../src/components/index.js";
+import { Home, About, NFT ,NFT2, NFT3, Team,  Roadmap,Contact, FAQ, Footer} from "../src/containers/index.js";
+import { Navbar, SideNavbar, Spaceship, CTA } from "../src/components/index.js";
 
 class App extends React.Component {
 
@@ -30,18 +30,20 @@ class App extends React.Component {
     <div className="bg-circle1"></div>
     <div className="bg-circle2"></div>
         <ParallaxProvider>
-          <section id="HEADER">
             <Navbar />
             <Home />
-          </section>
-          <section id="BODY">
             <SideNavbar />
             <About />
             <NFT />
-          </section>
-          <section id="FOOTER">
-            footer
-          </section>
+            <NFT2 />
+            <NFT3 />
+            <Roadmap />
+            <CTA />
+            <Team />
+            <FAQ />
+            <Contact />
+            <Footer />
+ 
         </ParallaxProvider>      
       </>
     }</div>;

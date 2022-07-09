@@ -1,7 +1,7 @@
 import React from "react";
 
 
-import Accordion from "react-bootstrap/Accordion"
+import Accordion from "react-bootstrap/Accordion";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Card from "react-bootstrap/Card"
 import { useAccordionButton } from "react-bootstrap/AccordionButton";

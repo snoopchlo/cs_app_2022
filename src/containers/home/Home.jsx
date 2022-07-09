@@ -32,7 +32,7 @@ const Home = () => {
             <img src={rocket} alt='.' />
           </div> */}
 
-        <div className='hero-bottom'>
+        {/* <div className='hero-bottom'>
             <div className='hero-bottom1'>
               <AnimationOnScroll animateIn="animate__animated animate__fadeInLeft" animateOut='animate__fadeOutLeft'>
                 <span className='hero-text1 from-left gradient__text'>Some Text?</span>
@@ -51,7 +51,7 @@ const Home = () => {
      
 
           </div>
-        </div>
+        </div> */}
         
         
   
