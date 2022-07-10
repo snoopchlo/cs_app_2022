@@ -1,77 +1,51 @@
 import React from "react";
-
-
-import Accordion from "react-bootstrap/Accordion";
-import "bootstrap/dist/css/bootstrap.min.css";
-import Card from "react-bootstrap/Card"
-import { useAccordionButton } from "react-bootstrap/AccordionButton";
-
+import Faq from "react-faq-component";
+// import { FiPlusCircle } from "react-icons/fi";
 
 import "./FAQ.css";
 
 
-
-function CustomToggle({ children, eventKey }) {
-  
-  const decoratedOnClick = useAccordionButton(eventKey, () =>
-    console.log("totally custom!"),
-  );
-
-  return (
-    <button
-      type="button"
-      onClick={decoratedOnClick}
-      className="FAQ-button"
-    >
-      {children}
-    </button>
-  );
-}
-
-const btns = document.getElementsByClassName(".FAQ-button");
-
-  // fn
-  function accordion() {
-    // this = the btn | icon & bg changed
-    this.classList.toggle("is-open");
-  
-    // the acc-content
-    const content = this.nextElementSibling;
-  
-    // IF open, close | else open
-    if (content.style.maxHeight) content.style.maxHeight = null;
-    else content.style.maxHeight = content.scrollHeight + "px";
-  }
-  
-  // event
-  // btns.forEach((el) => el.addEventListener("click", accordion));
-  for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", accordion);
-  }
-const FAQ = ( ) => {
-  
-  
+const data = {
+  // title: "FAQ (How it works)",
+  rows: [
+      {
+          title: "Lorem ipsum dolor sit amet,",
+          content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed tempor sem. Aenean vel turpis feugiat,
+            ultricies metus at, consequat velit. Curabitur est nibh, varius in tellus nec, mattis pulvinar metus.
+            In maximus cursus lorem, nec laoreet velit eleifend vel. Ut aliquet mauris tortor, sed egestas libero interdum vitae.
+            Fusce sed commodo purus, at tempus turpis.`,
+      },
+      {
+          title: "Nunc maximus, magna at ultricies elementum",
+          content:
+              "Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam, vitae convallis ex tortor sed dolor.",
+      },
+      {
+          title: "Curabitur laoreet, mauris vel blandit fringilla",
+          content: `Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc, ac sagittis leo elit vel lorem.
+          Fusce tempor lacus ut libero posuere viverra. Nunc velit dolor, tincidunt at varius vel, laoreet vel quam.
+          Sed dolor urna, lobortis in arcu auctor, tincidunt mattis ante. Vivamus venenatis ultricies nibh in volutpat.
+          Cras eu metus quis leo vestibulum feugiat nec sagittis lacus.Mauris vulputate arcu sed massa euismod dignissim. `,
+      },
+      {
+          title: "What is the package version",
+          content: <p>current version is 1.2.1</p>,
+      },
+  ],
+};
+const styles = {
+  arrowColor: 'white',
+  rowContentColor: 'white',
+};
+export default function FAQ() {
   return (
     <section className="FAQ-section section__padding">
-      {/* <div className="cs__FAQ container section__padding" id="FAQ" data-scroll-section> */}
-        <h1 className="section__title">FAQ</h1>
-        <div className="cs__FAQ-content">
-          <Accordion defaultActiveKey="0">
-            <Card className="FAQ__item-body">
-              <Card.Header className="FAQ-header">
-                <div>How many collection are there?</div>
-                <CustomToggle eventKey="0"><div className="FAQ-button"><i className="fa-regular fa-circle-plus"></i></div></CustomToggle>
-              </Card.Header>
-              <Accordion.Collapse eventKey="0">
-                <Card.Body className="FAQ-answer">Hello! I"m the body</Card.Body>
-              </Accordion.Collapse>
-            </Card>
-          </Accordion>
-        </div>
-      {/* </div> */}
-    </section>   
-  )
+    <h1 className="section__title">FAQ</h1>
+         <div className="FAQ-content">
+                <Faq data={data}
+                  styles={styles}
+                />
+            </div>
+      </section>
+  );
 }
-
-
-export default FAQ
