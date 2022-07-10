@@ -1,5 +1,6 @@
 import React from "react";
 import Faq from "react-faq-component";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 // import { FiPlusCircle } from "react-icons/fi";
 
 import "./FAQ.css";
@@ -39,6 +40,7 @@ const styles = {
 };
 export default function FAQ() {
   return (
+    <AnimationOnScroll animateIn="animate__fadeIn">
     <section className="FAQ-section section__padding">
     <h1 className="section__title">FAQ</h1>
          <div className="FAQ-content">
@@ -47,5 +49,6 @@ export default function FAQ() {
                 />
             </div>
       </section>
+      </AnimationOnScroll>
   );
 }

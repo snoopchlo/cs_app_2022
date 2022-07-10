@@ -12,10 +12,9 @@
     flex-direction: row;
 
     padding: 2rem;
-    margin: 4rem;
+    /* margin: 4rem; */
     border-radius: 1rem;
     background: var(--gradient-bar);
-    margin: 0 100px;
 }
 
 .cta-content {
