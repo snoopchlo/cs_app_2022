@@ -3,7 +3,7 @@ import './CTA.css';
 
 const CTA = () => {
   return (
-    <div className='cta__container container' data-scroll-section>
+    <div className='cta-container' data-scroll-section>
       <div className="cta">
           <div className="cta-content">
             <p>Request Early Access to Get Started</p>

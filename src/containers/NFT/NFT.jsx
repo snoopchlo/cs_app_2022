@@ -1,6 +1,5 @@
 import React from "react";
 import "./NFT.css";
-import { Parallax } from 'react-scroll-parallax';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import img1 from "../../assets/NFT-images/1657.png";
 import img2 from "../../assets/NFT-images/1670.png";
@@ -13,7 +12,7 @@ import flowerLine from "../../assets/header-img/flower-line.png";
 const NFT = () => {
   return (
     <AnimationOnScroll animateIn="animate__animated animate__fadeIn" afterAnimatedOut={"animate__fadeOut"}>
-    <Parallax speed={-25}>
+   
     <section className="NFT-section section__padding">
         <div className="girls-collection-container">
             <div className="NFT-title-line">
@@ -43,7 +42,7 @@ const NFT = () => {
 
         
     </section>
-    </Parallax>
+ 
     </AnimationOnScroll>
   )
 }

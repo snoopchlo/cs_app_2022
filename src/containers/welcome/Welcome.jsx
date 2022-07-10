@@ -32,7 +32,7 @@ const Welcome = () => {
             {/* <span className='first-light'></span> */}
             {/* <span className='second-light'></span> */}
             {/* <img className="palace-back" src={palace} alt="." /> */}
-            <AnimationOnScroll animateIn='animate__shakeX'>
+            <AnimationOnScroll initiallyVisible={true} animateIn='animate__animated animate__shakeX'>
                 <img className="palace" src={palace} alt="." />
                 
                 <img src={music1} alt="." className='music music1'/>
@@ -44,7 +44,8 @@ const Welcome = () => {
                 <img src={music7} alt="." className='music music7'/>
                 <img src={music8} alt="." className='music music8'/>
                 </AnimationOnScroll>
-
+           
+         
             {/* <img className=" cloud cloud1" src={cloud1} alt="." />
             <img className=" cloud cloud2" src={cloud2} alt="." />
             <img className=" cloud cloud3" src={cloud3} alt="." />
@@ -55,6 +56,7 @@ const Welcome = () => {
             <img className="light light4" src={light4} alt="."/> */}
 
         </div>
+     
 
     </section>
     </Parallax>

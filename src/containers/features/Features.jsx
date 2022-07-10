@@ -1,4 +1,5 @@
 import React from "react";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 import "./features.css";
 import {Feature} from "../../components/index";
 
@@ -23,16 +24,20 @@ const featuresData = [
 
 const Features = () => {
   return (
-    <section className="features-section section__padding" data-scroll-section>
+    <section className="features-section section__padding">
       <div className="features-container content__padding" id="features">
       <div className="features-heading">
+        <AnimationOnScroll animateIn='animate__animated animate__fadeInLeft'>
         <h1 className="features-title gradient__text">The Future is Now and You Just Need to Realize It. Step into Future Today. & Make it Happen.</h1>
         <p>Request Early Access to Get Started</p>
+        </AnimationOnScroll>
       </div>
       <div className="features-contents">
+      <AnimationOnScroll animateIn='animate__animated animate__fadeInRight'>
         {featuresData.map((item, index) => (
           <Feature title={item.title} text={item.text} key={item.title + index} />
         ))}
+        </AnimationOnScroll>
       </div>
     </div>
     

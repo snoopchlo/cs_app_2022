@@ -37,9 +37,10 @@ class App extends React.Component {
             <Welcome />
             <NFT />
             <Features />
-            <NFT2 />
-            <NFT3 />
+
             <Roadmap />
+            {/* <NFT2 />
+            <NFT3 /> */}
             <CTA />
             <Team />
             <FAQ />
