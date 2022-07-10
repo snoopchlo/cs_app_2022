@@ -52,30 +52,26 @@ const FAQ = ( ) => {
   
   
   return (
-    <div className="cs__FAQ container section__padding" id="FAQ" data-scroll-section>
-      <h1 className="section__title">FAQ</h1>
-      <div className="cs__FAQ-content">
-        <Accordion defaultActiveKey="0">
-          <Card className="FAQ__item-body">
-            <Card.Header className="FAQ-header">
-              <div>How many collection are there?</div>
-              <CustomToggle eventKey="0"><div className="FAQ-button"><i className="fa-regular fa-circle-plus"></i></div></CustomToggle>
-            </Card.Header>
-            <Accordion.Collapse eventKey="0">
-              <Card.Body className="FAQ-answer">Hello! I"m the body</Card.Body>
-            </Accordion.Collapse>
-          </Card>
-
-        </Accordion>
-      </div>
-
-
-    </div>
-
-   
+    <section className="FAQ-section section__padding">
+      {/* <div className="cs__FAQ container section__padding" id="FAQ" data-scroll-section> */}
+        <h1 className="section__title">FAQ</h1>
+        <div className="cs__FAQ-content">
+          <Accordion defaultActiveKey="0">
+            <Card className="FAQ__item-body">
+              <Card.Header className="FAQ-header">
+                <div>How many collection are there?</div>
+                <CustomToggle eventKey="0"><div className="FAQ-button"><i className="fa-regular fa-circle-plus"></i></div></CustomToggle>
+              </Card.Header>
+              <Accordion.Collapse eventKey="0">
+                <Card.Body className="FAQ-answer">Hello! I"m the body</Card.Body>
+              </Accordion.Collapse>
+            </Card>
+          </Accordion>
+        </div>
+      {/* </div> */}
+    </section>   
   )
 }
-
 
 
 export default FAQ

@@ -1,5 +1,12 @@
-.NFT2 {
+.NFT2-container {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NFT2 {
+    width: 80%;
     /* min-height: 100vh; */
     display: flex;
     flex-direction: column;

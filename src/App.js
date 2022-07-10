@@ -39,8 +39,8 @@ class App extends React.Component {
             <Features />
 
             <Roadmap />
-            {/* <NFT2 />
-            <NFT3 /> */}
+            <NFT2 />
+            <NFT3 />
             <CTA />
             <Team />
             <FAQ />

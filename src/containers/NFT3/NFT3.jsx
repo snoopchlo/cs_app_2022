@@ -1,4 +1,5 @@
 import React from "react";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 import "./NFT3.css";
 
 import img1 from "../../assets/NFT-images/1657.png";
@@ -11,7 +12,9 @@ import img5 from "../../assets/NFT-images/1697.png";
 
 const NFT3 = () => {
   return (
-    <div className="NFT3" data-scroll-section>
+    <AnimationOnScroll animateIn="animate__fadeIn">
+    <article className="NFT3-container">
+        <div className="NFT3" data-scroll-section>
         <h1 className="nft-title gradient__text">K-mon collection</h1>
         <div className="NFT-images-container content__padding">
             <div>
@@ -32,6 +35,9 @@ const NFT3 = () => {
         </div>
         
     </div>
+    </article>
+    </AnimationOnScroll>
+    
   )
 }
 

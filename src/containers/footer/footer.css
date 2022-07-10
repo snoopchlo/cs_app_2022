@@ -10,12 +10,14 @@
     color: #fff;
 }
 
+
 .footer-container h1 {
     font-weight: 100;
     font-size: 25px;
     margin: 0 auto;
     text-align: center;
     text-transform: capitalize;
+    
 }
 
 .footer-container h2 {
@@ -30,6 +32,7 @@
     gap: 5px;
     padding: 10px 20px;
     border-radius: 5px;
+    color: #fff;
 }
 
 .footer-container h2:hover {
@@ -43,6 +46,7 @@
     flex-wrap:wrap;
     justify-content: center;
     align-items: center;
+  
 }
 
 .social-links .social {
@@ -54,6 +58,7 @@
     backdrop-filter: blur(10px);
     cursor: pointer;
     transition: background .2s ease;
+    color: #fff;
 }
 
 .social-links .social:hover {

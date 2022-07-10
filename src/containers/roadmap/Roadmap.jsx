@@ -1,8 +1,10 @@
 import React from "react";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 import "./roadmap.css";
 
 const Roadmap = () => {
   return (
+    <AnimationOnScroll animateIn="animate__fadeIn">
       <div className="roadmap-section section__padding" data-scroll-sectionr>
           <h1 className="section__title">Roadmap</h1>
           <div className="roadmap-container" id="roadmap">
@@ -12,7 +14,7 @@ const Roadmap = () => {
 
           </div>
       </div>
-
+      </AnimationOnScroll>
 
   )
 }

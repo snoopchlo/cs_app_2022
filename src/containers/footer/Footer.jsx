@@ -15,7 +15,7 @@ import { AiOutlineMail } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <div id="footer" className="container footer-container" data-scroll-section>
+    <div id="footer" className="footer-container">
       <h1>
       The End
       <a href="#home">

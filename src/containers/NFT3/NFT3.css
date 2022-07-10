@@ -1,5 +1,12 @@
-.NFT3 {
+.NFT3-container {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NFT3 {
+    width: 80%;
     /* min-height: 100vh; */
     display: flex;
     flex-direction: column;

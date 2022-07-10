@@ -1,8 +1,10 @@
 import React from 'react';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 import './CTA.css';
 
 const CTA = () => {
   return (
+    <AnimationOnScroll initiallyVisible={true} animateIn="animate__bounce">
     <div className='cta-container' data-scroll-section>
       <div className="cta">
           <div className="cta-content">
@@ -14,7 +16,7 @@ const CTA = () => {
           </div>
       </div>
     </div>
-
+    </AnimationOnScroll>
   )
 }
 
