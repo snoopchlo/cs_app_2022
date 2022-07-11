@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/cs_app_2022/static/css/main.ca42115a.css",
+    "main.js": "/cs_app_2022/static/js/main.ac250938.js",
+    "static/js/787.c12d82bc.chunk.js": "/cs_app_2022/static/js/787.c12d82bc.chunk.js",
+    "static/media/1697.png": "/cs_app_2022/static/media/1697.63976d98651e3e0eeb4b.png",
+    "static/media/1690.png": "/cs_app_2022/static/media/1690.f1e208afdb523de07cb8.png",
+    "static/media/1657.png": "/cs_app_2022/static/media/1657.98d08b96f4811485b2a4.png",
+    "static/media/1670.png": "/cs_app_2022/static/media/1670.4e56376673a634b1d474.png",
+    "static/media/ROZI-3D.png": "/cs_app_2022/static/media/ROZI-3D.948ca0583d9dd53c45ff.png",
+    "static/media/spaceship.png": "/cs_app_2022/static/media/spaceship.fb8edfb00d7dac586a80.png",
+    "static/media/planet2.png": "/cs_app_2022/static/media/planet2.906507fa06d3d83f42c1.png",
+    "static/media/1680.png": "/cs_app_2022/static/media/1680.8680d78c6a463562d769.png",
+    "static/media/palace.png": "/cs_app_2022/static/media/palace.25562bec1421d74500a7.png",
+    "static/media/planet4.png": "/cs_app_2022/static/media/planet4.7a2be17b6587c35a5cd7.png",
+    "static/media/COCO-3D.png": "/cs_app_2022/static/media/COCO-3D.2ae17b42d89e17b31803.png",
+    "static/media/planet1.png": "/cs_app_2022/static/media/planet1.5d196532de784a4d4ae7.png",
+    "static/media/planet6.png": "/cs_app_2022/static/media/planet6.80a63d5c00e2492030cd.png",
+    "static/media/POPO-3D.png": "/cs_app_2022/static/media/POPO-3D.92d8ced22200daae30a1.png",
+    "static/media/planet8.png": "/cs_app_2022/static/media/planet8.5243246cb07184f77e80.png",
+    "static/media/planet7.png": "/cs_app_2022/static/media/planet7.70c80d8d750608ae6932.png",
+    "static/media/planet3.png": "/cs_app_2022/static/media/planet3.b127b0168f4b81666a11.png",
+    "static/media/planet5.png": "/cs_app_2022/static/media/planet5.6b157217831bdd26bff3.png",
+    "static/media/stars.svg": "/cs_app_2022/static/media/stars.badcc0fa27dc37ca253bf1b67a62bf4c.svg",
+    "static/media/cs__brand-logo.svg": "/cs_app_2022/static/media/cs__brand-logo.c3657bb845d79b1d4dbcbbb461199bc4.svg",
+    "static/media/main-panel.png": "/cs_app_2022/static/media/main-panel.fa4d98323efb36526103.png",
+    "static/media/learn-more-btn.png": "/cs_app_2022/static/media/learn-more-btn.457ce6d2682109cc8d0e.png",
+    "static/media/flower-line.png": "/cs_app_2022/static/media/flower-line.29180241d9dad6d5ebab.png",
+    "index.html": "/cs_app_2022/index.html",
+    "main.ca42115a.css.map": "/cs_app_2022/static/css/main.ca42115a.css.map",
+    "main.ac250938.js.map": "/cs_app_2022/static/js/main.ac250938.js.map",
+    "787.c12d82bc.chunk.js.map": "/cs_app_2022/static/js/787.c12d82bc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ca42115a.css",
+    "static/js/main.ac250938.js"
+  ]
+}
