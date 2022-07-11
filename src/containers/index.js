@@ -11,7 +11,6 @@ export { default as NFT } from './NFT/NFT.jsx';
 export { default as NFT2 } from './NFT2/NFT2.jsx';
 export { default as NFT3 } from './NFT3/NFT3.jsx';
 export { default as Team } from './team/Team.jsx';
-export { default as Projects } from "./projects/Projects";
 export { default as Contact } from './contact/Contact.jsx';
 export { default as FAQ } from './FAQ/FAQ.jsx';
 

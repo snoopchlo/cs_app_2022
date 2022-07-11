@@ -37,6 +37,7 @@ const data = {
 const styles = {
   arrowColor: 'white',
   rowContentColor: 'white',
+  rowTitleColor: 'white',
 };
 export default function FAQ() {
   return (

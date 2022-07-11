@@ -3,9 +3,6 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 
 import "./App.css";
 
-// import { Footer, Roadmap, Features, About, Header, Team, NFT, NFT2, NFT3, Contact, FAQ } from "../src/containers/index.js";
-// import { CTA, Navbar, SideNavbar, Loader } from "./components/index.js";
-
 import { Home, About, NFT ,NFT2, NFT3, Team,  Roadmap,Contact, FAQ, Footer, Features, Welcome} from "../src/containers/index.js";
 import { Navbar, SideNavbar, Spaceship, CTA } from "../src/components/index.js";
 
@@ -37,7 +34,6 @@ class App extends React.Component {
             <Welcome />
             <NFT />
             <Features />
-
             <Roadmap />
             <NFT2 />
             <NFT3 />
@@ -46,7 +42,6 @@ class App extends React.Component {
             <FAQ />
             <Contact />
             <Footer />
- 
         </ParallaxProvider>      
       </>
     }</div>;
