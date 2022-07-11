@@ -3,11 +3,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+
+    margin: 6rem 0;
 }
 
 .NFT2 {
-    width: 80%;
-    /* min-height: 100vh; */
+    width: 75%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,7 +37,7 @@
 
 
 .NFT2 .NFT-images-container .nft-img {
-    width: 200px;
+    width: 100%;
     opacity: 0.2;
 }
 

@@ -2,11 +2,13 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 
 .features-container__feature-title {
-    max-width: 500px;
-    width: 40%;
+    /* max-width: 500px; */
+    max-width: 60%;
+    margin-right: 1em;
 }
 
 .features-container__feature-title h1 {

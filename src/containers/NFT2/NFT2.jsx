@@ -15,26 +15,26 @@ const NFT2 = () => {
     <AnimationOnScroll animateIn="animate__fadeIn">
     <article className="NFT2-container">
         <div className="NFT2">
-        <h1 className="nft-title gradient__text">boyz collection</h1>
-        <div className="NFT-images-container content__padding">
-            <div>
-                <img src={img1} className="img1 nft-img" alt="example test images nft"/>
+            <h1 className="nft-title gradient__text">boyz collection</h1>
+            <div className="NFT-images-container content__padding">
+                <div>
+                    <img src={img1} className="img1 nft-img" alt="example test images nft"/>
+                </div>
+                <div>
+                    <img src={img2} className="img2 nft-img" alt="example test images nft"/>
+                </div>
+                <div>
+                    <img src={img3} className="img3 nft-img" alt="example test images nft"/>
+                </div>
+                <div>
+                    <img src={img4} className="img4 nft-img" alt="example test images nft"/>
+                </div>
+                <div>
+                    <img src={img5} className="img5 nft-img" alt="example test images nft"/>
+                </div>
             </div>
-            <div>
-                <img src={img2} className="img2 nft-img" alt="example test images nft"/>
-            </div>
-            <div>
-                <img src={img3} className="img3 nft-img" alt="example test images nft"/>
-            </div>
-            <div>
-                <img src={img4} className="img4 nft-img" alt="example test images nft"/>
-            </div>
-            <div>
-                <img src={img5} className="img5 nft-img" alt="example test images nft"/>
-            </div>
-        </div>
         
-    </div>
+        </div>
     </article>
     </AnimationOnScroll>
   )

@@ -6,7 +6,7 @@
 }
 
 .NFT3 {
-    width: 80%;
+    width: 75%;
     /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
@@ -35,7 +35,7 @@
 
 
 .NFT3 .NFT-images-container .nft-img {
-    width: 200px;
+    width: 100%;
     opacity: 0.2;
 }
 

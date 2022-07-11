@@ -30,8 +30,8 @@
 }
 
 .team-section .team-member-container .member .member-img {
-    height: 300px;
-    width: 300px;
+    height: 300px!important;
+    width: 300px!important;
     border-radius: 40px;
 }
 
@@ -56,10 +56,10 @@
     border: 2px solid var(--color-sec-light);
 }
 
-.team-section .team-member-container .member .member-info {
+.team-member-container .member .member-info {
     margin-top: 9px;
     margin-left: 50px;
-    max-width: 50%;
+    width: 50%;
 }
 
 .team-section .team-member-container .member .member-info .name {
@@ -106,6 +106,10 @@
     width: 20%;
     /* margin-top: 40px; */
     /* padding: 100px; */
+}
+
+.team-contact-links a {
+    margin-right: 1.5em;
 }
 
 .team-contact {
@@ -163,7 +167,7 @@
 }
 
 .member-info--first-row {
-    width: 35rem;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
